@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectre Proxy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        
+        body {
+            background: radial-gradient(circle, #1a1a2e, #0f0f1a);
+            color: #d0aaff;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .title {
+            font-size: 2rem;
+            text-shadow: 0 0 15px #a020f0;
+        }
+
+        .typewrite {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+        }
+        
+        .bio {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .search-container {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .searchbar-input {
+            width: 350px;
+            padding: 12px 15px;
+            border: 2px solid #a020f0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #d0aaff;
+            font-size: 1rem;
+            border-radius: 30px; 
+            outline: none;
+            box-shadow: 0 0 10px #a020f0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .searchbar-input::placeholder {
+            color: #d0aaff99;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .searchbar-input:hover {
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px #ff00ff, 0 0 30px #a020f0;
+        }
+
+        .searchbar-input:focus {
+            background: rgba(20, 20, 50, 0.9);
+            box-shadow: 0 0 20px #ff00ff, 0 0 40px #a020f0;
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #a020f0; }
+            50% { box-shadow: 0 0 20px #ff00ff; }
+            100% { box-shadow: 0 0 10px #a020f0; }
+        }
+
+        .searchbar-input:focus {
+            animation: glow 1.5s infinite alternate;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        Welcome to
+        <span style="cursor: text">
+            <span class="typewrite" data-period="2000" data-type='["Spectre.","sci-fi.","sleek.", "speedy.", "privacy."]'>
+            </span>
+        </span>
+    </div>
+    
+    <div class="bio">A sleek and modern web proxy interface with a sci-fi aesthetic.</div>
+    
+    <div class="search-container">
+        <form id="uv-form">
+            <input id="uv-address" type="text" class="searchbar-input" 
+                maxlength="2048" title="Search" role="combobox" placeholder="Enter a URL or Search Query" required/>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="credits">Created by dyamuh.</div>
+</body>
+
+<script src="/@/uv.bundle.js"></script>
+<script src="/@/uv.config.js"></script>
+<script src="index.js"></script>
+<script src="main.js"></script>
+</html>
