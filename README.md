@@ -1,4 +1,4 @@
-# spectreV1 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Phantom-Proxies/PhantomOSv1/blob/main/LICENSE.txt)
+# spectreV1 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Phantom-Proxies/spectrev1/blob/main/LICENSE.txt)
 The source code and deployment for spectre proxy by Phantom Network.
 Currently uses Ultraviolet proxy and Ultraviolet backend scripts for a seamless experience.
 Also uses bare server. (IM SORRY IM UPGRADING EVERYTHING SOON).
